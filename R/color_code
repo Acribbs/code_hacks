@@ -1,0 +1,4 @@
+# Code for setting colours in seurat objects: example palettes = https://bookdown.org/ytliu13207/SingleCellMultiOmicsDataAnalysis/color-palette.html
+cols <- DiscretePalette(n = 36, palette = "stepped")
+b <- cols[seq(1, length(cols), 3)]
+DimPlot(named, reduction = "umap", label = FALSE, pt.size = 0.5, cols=b)
